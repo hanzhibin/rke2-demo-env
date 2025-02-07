@@ -1,0 +1,16 @@
+mirrors:
+  docker.io:
+    endpoint:
+      - "https://harbor.bsdd.local"
+  harbor.bsdd.local:
+    endpoint:
+      - "https://harbor.bsdd.local"
+configs:
+  "harbor.bsdd.local":
+    auth:
+      username: admin
+      password: Harbor12345
+    tls:
+      cert_file: /root/workspace/harbor/certs/server-certs/tls.crt 
+      key_file: /root/workspace/harbor/certs/server-certs/tls.key 
+      ca_file:  /root/workspace/harbor/certs/server-certs/ca.crt
